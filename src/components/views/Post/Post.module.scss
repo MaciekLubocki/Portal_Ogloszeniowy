@@ -1,0 +1,54 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  .link {
+    text-decoration: none;
+    color: rgb(43, 58, 58);
+  }
+  .BoardData {
+    font-size: 80%;
+  }
+
+  .BoardTitle {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .BoardImg {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: #eceff1;
+    border-radius: 3px;
+    margin: 1rem;
+    opacity: 1;
+  }
+  img {
+    transition: all ease 1s;
+  }
+
+  img:hover {
+    transform: scale(1.25);
+    opacity: 0.8;
+  }
+  .button {
+    margin-left: 5px;
+  }
+  .buttons {
+    opacity: 0;
+    width: 100%;
+    margin-top: 1rem;
+    transition: all ease 1s;
+  }
+  &:hover {
+    .buttons {
+      opacity: 1;
+    }
+  }
+  .edit {
+    color: white;
+  }
+}
